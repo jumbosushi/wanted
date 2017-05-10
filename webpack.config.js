@@ -1,24 +1,19 @@
-var webpack = require('webpack');
+const path = require('path')
 
 module.exports = {
   entry: {
     client: "./src/client.js",
   },
   output: {
-    filename: '[name].js',
-    path: "./public",
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.jsx?$/,
-        loaders: ['babel'],
-        exclude: /node_modules/,
+        test: /\.js?$/,
+        use: 'babel-loader',
       },
     ],
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx'],
-    modulesDirectories: ['node_modules'],
   },
 };

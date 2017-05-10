@@ -12,5 +12,9 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "webpack": "^2.5.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "babel-node src/server.js"
   }
 }
