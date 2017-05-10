@@ -1,11 +1,12 @@
+const webpack = require('webpack')
 const path = require('path')
 
-module.exports = {
+const config  = {
   entry: {
     client: "./src/client.js",
   },
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
   },
   module: {
@@ -14,6 +15,11 @@ module.exports = {
         test: /\.js?$/,
         use: 'babel-loader',
       },
-    ],
+    ]
   },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin(),
+  ]
 };
+
+module.exports = config
