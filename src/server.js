@@ -5,7 +5,7 @@ import Counter from './components/Counter'
 
 // init express
 const app = express()
-app.use(express.static("build"))
+app.use(express.static("dist"))
 
 // add top page routing
 app.get('/', (req, res) => {
