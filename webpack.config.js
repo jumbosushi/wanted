@@ -5,7 +5,7 @@ const { resolve } = require('path')
 module.exports = {
   context: resolve(__dirname, 'src'),
   entry: {
-    client: "./src/client.js",
+    client: "./src/index.js",
   },
   entry: [
     // activate Hot Module Reloading for React
