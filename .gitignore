@@ -59,3 +59,7 @@ typings/
 
 # Build folder
 bundle.js
+
+# Tern.js config file
+.tern-project
+
