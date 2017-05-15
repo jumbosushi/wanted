@@ -63,3 +63,10 @@ bundle.js
 # Tern.js config file
 .tern-project
 
+# Vim swap file
+*.swp
+*.swo
+
+# Ctags
+tags
+
