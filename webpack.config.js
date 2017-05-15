@@ -17,7 +17,7 @@ module.exports = {
     //only => means to only hot reload for successful updates
     'webpack/hot/only-dev-server',
     // entry point for the app
-    './client.js',
+    './index.js',
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
