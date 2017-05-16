@@ -5,5 +5,8 @@
   ],
   "plugins": [
     "react-hot-loader/babel" // Enables React code to work with HMR.
-  ]
+  ],
+  "filetypes": {
+    ".scss": "postcss-scss"
+  }
 }
